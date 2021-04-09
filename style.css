@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
 /* ==========================================================================
                           Global Styles
 ========================================================================== */
@@ -22,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 800;
 }
 h3 {
@@ -54,7 +57,7 @@ p {
 header {
   padding: 0;
   background-color: #9faca7;
-  border-bottom: 0.6rem solid rgb(88, 132, 139);
+  border-bottom: 0.4rem solid rgb(88, 132, 139);
   display: flex;
   justify-content: space-between;
 }
@@ -64,34 +67,36 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  text-align: center;
   align-items: center;
-  padding: 4px 0 1px 30px;
+  padding: 5px 0 1px 5px;
   flex-direction: row;
-  min-height: 10vh;
+  min-height: 7vh;
   width: 100%;
   flex-wrap: wrap;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex: 1 1 40rem;
   list-style-type: none;
 }
 
 li {
   display: inline-block;
   padding: 3px 40px 8px 0px;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
+  margin: 0 3.4rem;
 }
 
 li a {
-  color: white;
+  color: rgb(116, 99, 99);
+  font-weight: 600;
   text-shadow: 1px 1px black;
   text-decoration: none;
 }
@@ -101,8 +106,8 @@ li a {
 ========================================================================== */
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),transparent),
-    url("./img/HeroImage.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("img/Restaurants/bar16.jpg");
   width: 100%;
   margin: 0.1rem auto;
   background-size: cover;
@@ -115,28 +120,34 @@ li a {
   align-items: center;
   text-align: center;
 }
+
 .hero-text {
+  font-family: "Ranchers";
+  font-size: 6rem;
+  font-weight: 700;
   text-shadow: 4px 4px black;
-  color: #e5e794;
-  padding-top: 3rem;
+  color: #e6a630;
+  margin-bottom: 1rem;
+  margin-left: 7rem;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 h2 {
   color: white;
+  font-size: 8rem;
   text-shadow: 3px 2px black;
+  font-family: "Ranchers";
+  margin-left: 17rem;
 }
 
-button {
-  font-size: 3rem;
-  border-radius: 6px;
-  margin: 3rem;
-  padding: 0.2rem;
-}
 /* ==========================================================================
                            Images section
 ========================================================================== */
 #menu {
-  padding-top: 4rem;
+  padding-top: 3rem;
   background-color: rgb(230, 233, 219);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
@@ -144,7 +155,7 @@ button {
 .menu {
   background: #b9c9c3;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem 0rem 0.5rem 0rem;
   text-shadow: 2px 2px rgb(241, 239, 239);
 }
@@ -494,22 +505,38 @@ footer ul {
                            Queries
 ========================================================================== */
 
-@media only screen and (max-width: 1400px) and (min-width: 800px)  {
-.menu-head {
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+  .title-hero-text {
+    font-size: 7.8rem;
+    text-align: center;
+    margin-left: 18rem;
+  }
+
+  .menu-head {
     font-size: 5rem;
     background-color: rgb(230, 233, 219);
-    padding-right: 17rem;
+    padding-right: 12rem;
   }
 }
 
-@media only screen and (max-width: 799px) and (min-width: 410px)  {
+@media only screen and (max-width: 799px) and (min-width: 375px) {
+body {
+  width: 118%;
+}
+  .title-hero-text {
+    font-size: 5rem;
+    text-align: center;
+    margin-left: 5rem;
+  }
+
   nav ul li {
-    font-size: 2rem;
-    padding-right: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-text {
-    font-size:4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0 ;
   }
   .menu-head {
     font-size: 2rem;
@@ -522,6 +549,10 @@ footer ul {
   footer ul {
     display: none;
   }
+
+  .signature {
+  display: none;
+}
 }
 
 /* ==========================================================================
