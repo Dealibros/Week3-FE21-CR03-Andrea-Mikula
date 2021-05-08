@@ -520,9 +520,9 @@ footer ul {
 }
 
 @media only screen and (max-width: 799px) and (min-width: 375px) {
-body {
-  width: 118%;
-}
+  body {
+    width: 118%;
+  }
   .title-hero-text {
     font-size: 5rem;
     text-align: center;
@@ -536,7 +536,7 @@ body {
   .hero-text {
     font-size: 2.5rem;
     text-align: center;
-    margin-left: 0 ;
+    margin-left: 0;
   }
   .menu-head {
     font-size: 2rem;
@@ -551,8 +551,8 @@ body {
   }
 
   .signature {
-  display: none;
-}
+    display: none;
+  }
 }
 
 /* ==========================================================================
